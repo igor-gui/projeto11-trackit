@@ -3,7 +3,7 @@ import Cadastro from './Components/Cadastro'
 import Habitos from './Components/Habitos'
 import Login from './Components/Login'
 import GlobalStyle from './GlobalStyle'
-import Hoje from './Hoje'
+import Hoje from './Components/Hoje'
 
 
 

@@ -202,36 +202,95 @@ export const StyleHabits = styled.div`
             margin-left: 17px;
         }
     }
+`
 
-    footer {
+export const HojeStyle = styled.main`
+    min-height: 644px;
+    background-color: #F2F2F2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+    header {
         position: fixed;
+        top: 0;
+        background-color: #126BA5;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
         height: 70px;
         width: 375px;
-        bottom: 0;
+        box-sizing: border-box;
+        padding-left: 18px;
+        padding-right: 18px;
+        h1 {
+        font-family: 'Playball';
+        font-size: 39px;
+        font-weight: 400;
+        text-align: left;
+        color: #FFFFFF;
+            }
+        img {
+        height: 51px;
+        width: 51px;
+        border-radius: 98.5px;
+        }
+    }
 
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
+    main {
+        box-sizing: border-box;
+        padding-top: 22px;
+        margin-top: 70px;
+        min-height: 667px;
+        .topo {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 0 17px;
+            h1{
+                font-family: 'Lexend Deca';
+                font-size: 23px;
+                font-weight: 400;
+                text-align: left;
+                color: #126BA5;
+            }
+            button {
+                height: 35px;
+                width: 40px;
+                border-radius: 4.636363506317139px;
+                background-color: #52B6FF;
+                border: 0;
 
-        background-color: #FFFFFF;
+                display: flex;
+                justify-content: center;
+                align-items: center;
 
-        a {
-            cursor: pointer;
+                cursor: pointer;
+
+                font-family: 'Lexend Deca';
+                font-size: 27px;
+                font-weight: 400;
+                text-align: center;
+                color: #FFFFFF;
+            }
         }
 
-        .svgLink {
-            margin-bottom: 30px;
+        .habitos {
+            margin-top: 28px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
         }
 
-        .noSvg {
-            text-decoration: none;
+        p {
+            margin-top: 30px;
             font-family: 'Lexend Deca';
             font-size: 18px;
             font-weight: 400;
-            text-align: center;
-            color: #52B6FF;
+            text-align: left;
+            color: #666666;
+            margin-left: 17px;
         }
-
-        
     }
 `

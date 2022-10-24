@@ -1,6 +1,5 @@
-import { Link } from "react-router-dom"
+import Footer from "./Footer"
 import { StyleHabits } from "./styledComponents"
-import HojeImg from '../images/HojeImg.svg'
 
 
 
@@ -20,11 +19,7 @@ export default function Habitos() {
                 </p>
             </main>
 
-            <footer>
-                <Link to='/habitos' className="noSvg">Hábitos</Link>
-                <Link to='hoje' className="svgLink"><img src={HojeImg} alt=''/></Link>
-                <Link to='historico' className="noSvg">Histórico</Link>
-            </footer>
+            <Footer />
         </StyleHabits>
     )
 }

@@ -127,33 +127,6 @@ export const StyleHabits = styled.div`
     flex-direction: column;
     align-items: center;
 
-
-    header {
-        position: fixed;
-        top: 0;
-        background-color: #126BA5;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        height: 70px;
-        width: 375px;
-        box-sizing: border-box;
-        padding-left: 18px;
-        padding-right: 18px;
-        h1 {
-        font-family: 'Playball';
-        font-size: 39px;
-        font-weight: 400;
-        text-align: left;
-        color: #FFFFFF;
-            }
-        img {
-        height: 51px;
-        width: 51px;
-        border-radius: 98.5px;
-        }
-    }
-
     main {
         box-sizing: border-box;
         padding-top: 22px;
@@ -211,33 +184,6 @@ export const HojeStyle = styled.main`
     flex-direction: column;
     align-items: center;
 
-
-    header {
-        position: fixed;
-        top: 0;
-        background-color: #126BA5;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        height: 70px;
-        width: 375px;
-        box-sizing: border-box;
-        padding-left: 18px;
-        padding-right: 18px;
-        h1 {
-        font-family: 'Playball';
-        font-size: 39px;
-        font-weight: 400;
-        text-align: left;
-        color: #FFFFFF;
-            }
-        img {
-        height: 51px;
-        width: 51px;
-        border-radius: 98.5px;
-        }
-    }
-
     main {
         box-sizing: border-box;
         padding-top: 22px;
@@ -294,3 +240,30 @@ export const HojeStyle = styled.main`
         }
     }
 `
+
+export const HeaderStyle = styled.header`
+
+        position: fixed;
+        top: 0;
+        background-color: #126BA5;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 70px;
+        width: 375px;
+        box-sizing: border-box;
+        padding-left: 18px;
+        padding-right: 18px;
+        h1 {
+        font-family: 'Playball';
+        font-size: 39px;
+        font-weight: 400;
+        text-align: left;
+        color: #FFFFFF;
+            }
+        img {
+        height: 51px;
+        width: 51px;
+        border-radius: 98.5px;
+        }
+`    

@@ -1,15 +1,17 @@
-import { createContext } from "react";
+import { createContext , useState } from "react";
 
 export const AuthContext = createContext({})
 
 export const AuthProvider = (props) => {
     
-    const user = {
-        name: 'Igor'
-    }
+    const [form, setForm] = useState({email: "", name: "", image: "", password: ""})
+
+    
+    const formData = {form: form, setForm: setForm, baseURL:'https://mock-api.bootcamp.respondeai.com.br/api/v2/trackit/' }
+    
     
     return (
-        <AuthContext.Provider value={user}>
+        <AuthContext.Provider value={formData}>
             {props.children}
         </AuthContext.Provider>
     )

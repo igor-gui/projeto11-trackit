@@ -4,6 +4,7 @@ import Habitos from './Components/Habitos'
 import Login from './Components/Login'
 import GlobalStyle from './GlobalStyle'
 import Hoje from './Components/Hoje'
+import Historico from './Components/Historico'
 
 
 
@@ -21,7 +22,7 @@ export default function App() {
                     <Route path='/cadastro' element={<Cadastro />} />
                     <Route path='/habitos' element={<Habitos />} />
                     <Route path='/hoje' element={<Hoje />} />
-                    <Route path='/historico' element={''} />
+                    <Route path='/historico' element={<Historico />} />
                 </Routes>
             </BrowserRouter>
         </>

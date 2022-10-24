@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import styled from 'styled-components'
 import HojeImg from '../images/HojeImg.svg'
 
@@ -36,11 +36,12 @@ const StyledFooter = styled.footer`
 
 export default function Footer() {
 
+
     return (
         <StyledFooter>
             <Link to='/habitos' className="noSvg">Hábitos</Link>
-            <Link to='hoje' className="svgLink"><img src={HojeImg} alt='' /></Link>
-            <Link to='historico' className="noSvg">Histórico</Link>
+            <Link to='/hoje' className="svgLink"><img src={HojeImg} alt='' /></Link>
+            <Link to='/historico' className="noSvg">Histórico</Link>
         </StyledFooter>
     )
 }

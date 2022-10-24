@@ -116,10 +116,6 @@ img {
 
 `
 
-export const StyledHabits = styled.main`
-
-`
-
 export const StyleHabits = styled.div`
     min-height: 644px;
     background-color: #F2F2F2;
@@ -191,15 +187,21 @@ export const HojeStyle = styled.main`
         min-height: 667px;
         .topo {
             display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin: 0 17px;
+            gap: 17px;
+            flex-direction: column;
             h1{
                 font-family: 'Lexend Deca';
                 font-size: 23px;
                 font-weight: 400;
                 text-align: left;
                 color: #126BA5;
+            }
+            h3{
+                font-family: 'Lexend Deca';
+                font-size: 18px;
+                font-weight: 400;
+                text-align: left;
+                color: #666666;
             }
             button {
                 height: 35px;
@@ -242,7 +244,7 @@ export const HojeStyle = styled.main`
 `
 
 export const HeaderStyle = styled.header`
-
+        box-shadow: 0px 4px 4px 0px #00000026;
         position: fixed;
         top: 0;
         background-color: #126BA5;
@@ -267,3 +269,48 @@ export const HeaderStyle = styled.header`
         border-radius: 98.5px;
         }
 `    
+export const StyleHistoric = styled.main`
+        background-color: #E7E7E7;
+        box-sizing: border-box;
+        padding-top: 22px;
+        margin-top: 70px;
+        min-height: 667px;
+        .topo {
+            display: flex;
+            gap: 17px;
+            flex-direction: column;
+            margin: 0 17px;
+            color: #666666;
+            h1{
+                font-family: 'Lexend Deca';
+                font-size: 23px;
+                font-weight: 400;
+                text-align: left;
+                color: #126BA5;
+            }
+            p{
+                font-family: 'Lexend Deca';
+                font-size: 18px;
+                font-weight: 400;
+            }
+            button {
+                height: 35px;
+                width: 40px;
+                border-radius: 4.636363506317139px;
+                background-color: #52B6FF;
+                border: 0;
+
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                cursor: pointer;
+
+                font-family: 'Lexend Deca';
+                font-size: 27px;
+                font-weight: 400;
+                text-align: center;
+                color: #FFFFFF;
+            }
+        }
+            `
